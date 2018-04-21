@@ -21,9 +21,11 @@ ___ ___   ____  ____   __  _    ___  ____
 
   <br/>
   <br/>
-  <img src="https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square">
   <img src="https://img.shields.io/badge/downloads-0k-yellow.svg?style=flat-square">
-  <img src="https://img.shields.io/badge/build-passing-yellow.svg?style=flat-square">
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg" width="87px">
+  <img src="https://forthebadge.com/images/badges/made-with-python.svg" width="130px">
+  <img src="https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square">
+
 </p>
 
 ## Installation
