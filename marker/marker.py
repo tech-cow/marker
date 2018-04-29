@@ -6,22 +6,28 @@
 # |   |   ||  |  ||  .  \|  .  ||     ||  .  \
 # |___|___||__|__||__|\_||__|\_||_____||__|\_|
 import os
+from marker import md_content
 
 
 class Marker(object):
     """The Marker object."""
+
     def __init__(self, readme):
         super(Marker, self).__init__()
-        self.readme = readme
+        self._readme = readme
+        self._logo = logo
+        # self._badge = badge
+        # self._introduction = introduction
+        # self._license = license
 
     @property
     def logo(self):
+        return self._logo
+
+    @logo.setter
+    def logo(self):
         with open(self.readme, 'a') as f:
-            f.write(
-            '<h3 style="text-align:center;font-weight: 300;" align="center">\n' +
-              '  <img src="https://images.unsplash.com/photo-1523453116873-a0c03c78badc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&ixid=eyJhcHBfaWQiOjF9&s=418329ffd2a23ac9cc612ed8e641bf67 " alt="picture number"> \n' +
-            '</h3>\n'
-            )
+            f.write(self._logo)
 
     @property
     def badge(self):
@@ -39,10 +45,11 @@ class Marker(object):
             f.write('license\n')
 
     def make(self):
-        self.logo
-        self.badge
-        self.introduction
-        self.license
+        self.logo = 'fuck'
+        print(self.logo)
+        # self.badge
+        # self.introduction
+        # self.license
 
 
 def path_file_check(root_dir):
@@ -59,7 +66,10 @@ def path_file_check(root_dir):
             f.write('Hello, World\n')
 
 
-# Test
-path_file_check('/Users/yui/Dropbox/github/marker/marker')
-file = Marker('/Users/yui/Dropbox/github/marker/marker/README.md')
-file.make()
+# Better Practice, also better for importings
+if __name__ == '__main__':
+    path_file_check('/Users/yui/Dropbox/github/marker/marker')
+    content = md_content.text
+    file = Marker('/Users/yui/Dropbox/github/marker/marker/README.md',
+                  content['logo'])
+    file.make()
