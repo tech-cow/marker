@@ -6,50 +6,67 @@
 # |   |   ||  |  ||  .  \|  .  ||     ||  .  \
 # |___|___||__|__||__|\_||__|\_||_____||__|\_|
 import os
-from marker import md_content
+import md_content
 
 
 class Marker(object):
     """The Marker object."""
 
-    def __init__(self, readme):
+    def __init__(
+            self,
+            readme,
+            logo=None,
+            badge=None,
+            installation=None,
+            author=None,
+            license=None,
+            footer=None):
         super(Marker, self).__init__()
         self._readme = readme
         self._logo = logo
-        # self._badge = badge
+        self._badge = badge
+        self._installation = installation
+        self._author = author
+        self._license = license
+        self._footer = footer
         # self._introduction = introduction
-        # self._license = license
 
-    @property
     def logo(self):
-        return self._logo
-
-    @logo.setter
-    def logo(self):
-        with open(self.readme, 'a') as f:
+        with open(self._readme, 'a') as f:
             f.write(self._logo)
 
-    @property
     def badge(self):
-        with open(self.readme, 'a') as f:
-            f.write('badge\n')
+        with open(self._readme, 'a') as f:
+            f.write(self._badge)
 
-    @property
+    def installation(self):
+        with open(self._readme, 'a') as f:
+            f.write(self._installation)
+
+    def author(self):
+        with open(self._readme, 'a') as f:
+            f.write(self._author)
+
     def introduction(self):
-        with open(self.readme, 'a') as f:
+        with open(self._readme, 'a') as f:
             f.write('introduction\n')
 
-    @property
     def license(self):
-        with open(self.readme, 'a') as f:
-            f.write('license\n')
+        with open(self._readme, 'a') as f:
+            f.write(self._license)
+
+    def footer(self):
+        with open(self._readme, 'a') as f:
+            f.write(self._footer)
 
     def make(self):
-        self.logo = 'fuck'
-        print(self.logo)
-        # self.badge
-        # self.introduction
-        # self.license
+        self.logo()
+        self.badge()
+        self.installation()
+        self.author()
+        self.license()
+        self.footer()
+        # self.introduction()
 
 
 def path_file_check(root_dir):
@@ -67,9 +84,15 @@ def path_file_check(root_dir):
 
 
 # Better Practice, also better for importings
-if __name__ == '__main__':
+if __name__ == "__main__":
     path_file_check('/Users/yui/Dropbox/github/marker/marker')
-    content = md_content.text
-    file = Marker('/Users/yui/Dropbox/github/marker/marker/README.md',
-                  content['logo'])
+    content = md_content.content
+    file = Marker(
+        '/Users/yui/Dropbox/github/marker/marker/README.md',
+        content['logo'],
+        content['badge'],
+        content['installation'],
+        content['author'],
+        content['license'],
+        content['footer'])
     file.make()

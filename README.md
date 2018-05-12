@@ -57,11 +57,10 @@ generate a pre-configured markdown or configure one yourself
 MIT © [Yu Zhou](http://yuzhoujr.com)
 
 
+
+
+
 <br/><br/>
-
-
-<!-- FOSSA here maybe -->
-
 
 > ![home](http://yuzhoujr.com/legacy/emoji/home.svg)
 [yuzhoujr.com](http://www.yuzhoujr.com) &nbsp;&middot;&nbsp;
