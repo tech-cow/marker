@@ -25,10 +25,10 @@ content['logo'] = '' +\
 content['badge'] = '' +\
     f'<p align="center">{newline}' +\
     f'  <b>Title</b>: Title for Humans™<br/><br/>{newline}' +\
-    f'  <img src="https://img.shields.io/badge/downloads-0k-yellow.svg?style=flat-square">{newline}' +\
-    f'  <img src="https://forthebadge.com/images/badges/built-with-love.svg" width="87px">{newline}' +\
-    f'  <img src="https://forthebadge.com/images/badges/made-with-python.svg" width="130px">{newline}' +\
-    f'  <img src="https://img.shields.io/badge/downloads-0k-yellow.svg?style=flat-square">\n' +\
+    f'  <img src="https://tinyurl.com/ydbetf98">{newline}' +\
+    f'  <img src="https://tinyurl.com/ybtatfar" width="87px">{newline}' +\
+    f'  <img src="https://tinyurl.com/y8uqeu6h" width="130px">{newline}' +\
+    f'  <img src="https://tinyurl.com/ydbetf98">{newline}' +\
     f'</p>{newline}<br>{space}'
 
 
@@ -41,7 +41,7 @@ content['installation'] = '' +\
 
 content['author'] = '' +\
     f'## Author{newline}' +\
-    f'[![Yu Zhou](https://avatars3.githubusercontent.com/u/6414741?s=100&v=4)](http://yuzhoujr.com){newline}' +\
+    f'[![Yu Zhou](https://tinyurl.com/y7kc636d)](http://yuzhoujr.com){newline}' +\
     f'---|{newline}' +\
     f'[Yu Zhou :rocket:](http://yuzhoujr.com)<br>{space}'
 
@@ -53,9 +53,9 @@ content['license'] = '' +\
 
 content['footer'] = '' +\
     f'<br/>{doubleline}' +\
-    f'> ![home](http://yuzhoujr.com/legacy/emoji/home.svg)[yuzhoujr.com](http://www.yuzhoujr.com) &nbsp;&middot;&nbsp; {newline}' +\
-    f'> ![github](http://yuzhoujr.com/legacy/emoji/github.svg)  [@yuzhoujr](https://github.com/yuzhoujr) &nbsp;&middot;&nbsp; {newline}' +\
-    f'> ![linkedin](http://yuzhoujr.com/legacy/emoji/linkedin.svg)  [@yuzhoujr](https://linkedin.com/in/yuzhoujr) {space}'
+    f'> ![home](https://tinyurl.com/y994f9ab)[yuzhoujr.com](http://www.yuzhoujr.com) &nbsp;&middot;&nbsp; {newline}' +\
+    f'> ![github](https://tinyurl.com/yb59pl7l)  [@yuzhoujr](https://github.com/yuzhoujr) &nbsp;&middot;&nbsp; {newline}' +\
+    f'> ![linkedin](https://tinyurl.com/y8p6lmb6)  [@yuzhoujr](https://linkedin.com/in/yuzhoujr) {space}'
 
 if __name__ == "__main__":
     print(content['footer'])
